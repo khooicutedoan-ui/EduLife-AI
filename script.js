@@ -236,10 +236,16 @@ function buildWeekPlan(subjects, hoursPerDay, weakSubject) {
     [pool[i], pool[j]] = [pool[j], pool[i]];
   }
 
-  const maxPerDay = Math.min(3, Math.ceil(pool.length / 7));
+  // Tính maxPerDay dựa trên số giờ thực tế, không giới hạn cứng ở 3
+  const maxPerDay = Math.max(3, Math.ceil(pool.length / 7));
   let dayIdx = 0;
+  let safeGuard = 0; // chống vòng lặp vô tận
   pool.forEach(subj => {
-    while (week[dayIdx].length >= maxPerDay) dayIdx = (dayIdx + 1) % 7;
+    safeGuard = 0;
+    while (week[dayIdx].length >= maxPerDay && safeGuard < 7) {
+      dayIdx = (dayIdx + 1) % 7;
+      safeGuard++;
+    }
     week[dayIdx].push(subj);
     dayIdx = (dayIdx + 1) % 7;
   });
