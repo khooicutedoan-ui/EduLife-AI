@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduLife AI – Công nghệ cho cuộc sống thông minh</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <!-- Icons via CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a class="nav-logo" href="#home">
+      <div class="logo-icon">
+        <i class="fa-solid fa-brain"></i>
+      </div>
+      <span class="logo-text">EduLife <span class="logo-accent">AI</span></span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home">Trang Chủ</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">Giới Thiệu</a></li>
+      <li><a href="#problems" class="nav-link" data-section="problems">Vấn Đề</a></li>
+      <li><a href="#solutions" class="nav-link" data-section="solutions">Giải Pháp</a></li>
+      <li><a href="#demo" class="nav-link" data-section="demo">Trải Nghiệm</a></li>
+      <li><a href="#technology" class="nav-link" data-section="technology">Công Nghệ</a></li>
+      <li><a href="#impact" class="nav-link" data-section="impact">Tác Động</a></li>
+      <li><a href="#team" class="nav-link" data-section="team">Đội Ngũ</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" title="Chuyển chế độ sáng/tối">
+        <i class="fa-solid fa-sun" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== SECTION 1: TRANG CHỦ ========== -->
+<section class="section hero-section" id="home">
+  <div class="hero-bg-shapes">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+  <div class="container hero-container">
+    <div class="hero-content" data-animate>
+      <div class="hero-badge">
+        <i class="fa-solid fa-trophy"></i>
+        STEMPETITION 2027 – Challenge 5: Future Technology
+      </div>
+      <h1 class="hero-title">
+        <span class="gradient-text">EduLife AI</span>
+      </h1>
+      <p class="hero-slogan">
+        "Học tập thông minh – Cuộc sống tiện ích –<br/>Tương lai trong tầm tay."
+      </p>
+      <p class="hero-desc">
+        Nền tảng ứng dụng trí tuệ nhân tạo giúp học sinh quản lý thời gian, lập kế hoạch học tập, ghi nhớ nhiệm vụ và xây dựng thói quen sống khoa học – tất cả trong một ứng dụng duy nhất.
+      </p>
+      <div class="hero-buttons">
+        <a href="#solutions" class="btn btn-primary">
+          <i class="fa-solid fa-compass"></i> Khám phá giải pháp
+        </a>
+        <a href="#demo" class="btn btn-secondary">
+          <i class="fa-solid fa-play"></i> Trải nghiệm ngay
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-count="5">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Giải pháp AI</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="3">0</span><span class="stat-suffix"></span>
+          <span class="stat-label">Công cụ Demo</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Miễn phí</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" data-animate>
+      <div class="ai-orb">
+        <div class="orb-core">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <div class="orb-ring orb-ring-1"></div>
+        <div class="orb-ring orb-ring-2"></div>
+        <div class="orb-ring orb-ring-3"></div>
+        <div class="orb-dot orb-dot-1"><i class="fa-solid fa-book"></i></div>
+        <div class="orb-dot orb-dot-2"><i class="fa-solid fa-calendar"></i></div>
+        <div class="orb-dot orb-dot-3"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="orb-dot orb-dot-4"><i class="fa-solid fa-lightbulb"></i></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-arrow">
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SECTION 2: GIỚI THIỆU ========== -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag"><i class="fa-solid fa-circle-info"></i> Giới Thiệu</span>
+      <h2 class="section-title">Dự án <span class="gradient-text">EduLife AI</span> là gì?</h2>
+      <p class="section-subtitle">Tìm hiểu về nguồn gốc, mục tiêu và ý nghĩa của dự án</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card glass-card" data-animate>
+        <div class="about-card-icon" style="--icon-color: #6366f1;">
+          <i class="fa-solid fa-rocket"></i>
+        </div>
+        <h3>Dự án là gì?</h3>
+        <p>EduLife AI là một nền tảng web tích hợp trí tuệ nhân tạo, hỗ trợ học sinh cấp THPT quản lý việc học, lập kế hoạch cá nhân và xây dựng thói quen sống lành mạnh. Ứng dụng hoạt động hoàn toàn trên trình duyệt, không cần cài đặt.</p>
+      </div>
+      <div class="about-card glass-card" data-animate>
+        <div class="about-card-icon" style="--icon-color: #a855f7;">
+          <i class="fa-solid fa-lightbulb"></i>
+        </div>
+        <h3>Vì sao ra đời?</h3>
+        <p>Nhiều học sinh hiện nay gặp khó khăn trong việc sắp xếp thời gian học tập, dễ quên bài tập và không biết cách sử dụng công nghệ AI đúng đắn. EduLife AI ra đời để giải quyết chính xác những vấn đề đó.</p>
+      </div>
+      <div class="about-card glass-card" data-animate>
+        <div class="about-card-icon" style="--icon-color: #06b6d4;">
+          <i class="fa-solid fa-users"></i>
+        </div>
+        <h3>Đối tượng sử dụng</h3>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check"></i> Học sinh THCS và THPT</li>
+          <li><i class="fa-solid fa-check"></i> Sinh viên đại học</li>
+          <li><i class="fa-solid fa-check"></i> Phụ huynh theo dõi con</li>
+          <li><i class="fa-solid fa-check"></i> Giáo viên tham khảo</li>
+        </ul>
+      </div>
+      <div class="about-card glass-card" data-animate>
+        <div class="about-card-icon" style="--icon-color: #10b981;">
+          <i class="fa-solid fa-bullseye"></i>
+        </div>
+        <h3>Mục tiêu dự án</h3>
+        <ul class="about-list">
+          <li><i class="fa-solid fa-check"></i> Tăng hiệu quả học tập 30%</li>
+          <li><i class="fa-solid fa-check"></i> Giảm tình trạng quên bài</li>
+          <li><i class="fa-solid fa-check"></i> Xây dựng thói quen khoa học</li>
+          <li><i class="fa-solid fa-check"></i> Phổ cập AI cho học sinh</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="impact-banner glass-card" data-animate>
+      <h3><i class="fa-solid fa-heart"></i> Ý nghĩa của dự án</h3>
+      <div class="impact-row">
+        <div class="impact-col">
+          <div class="impact-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <strong>Học sinh</strong>
+          <p>Học thông minh hơn, tiết kiệm thời gian, giảm căng thẳng trong việc theo dõi lịch học và bài tập.</p>
+        </div>
+        <div class="impact-col">
+          <div class="impact-icon"><i class="fa-solid fa-house"></i></div>
+          <strong>Gia đình</strong>
+          <p>Phụ huynh yên tâm hơn khi con có công cụ hỗ trợ học tập hiệu quả và an toàn.</p>
+        </div>
+        <div class="impact-col">
+          <div class="impact-icon"><i class="fa-solid fa-school"></i></div>
+          <strong>Nhà trường</strong>
+          <p>Hỗ trợ giáo viên trong việc định hướng học sinh sử dụng công nghệ một cách có trách nhiệm.</p>
+        </div>
+        <div class="impact-col">
+          <div class="impact-icon"><i class="fa-solid fa-earth-asia"></i></div>
+          <strong>Cộng đồng</strong>
+          <p>Góp phần xây dựng thế hệ trẻ thích nghi tốt với kỷ nguyên số và trí tuệ nhân tạo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SECTION 3: VẤN ĐỀ THỰC TẾ ========== -->
+<section class="section section-alt" id="problems">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag"><i class="fa-solid fa-triangle-exclamation"></i> Vấn Đề</span>
+      <h2 class="section-title">Thực trạng <span class="gradient-text">đáng lo ngại</span></h2>
+      <p class="section-subtitle">Những khó khăn mà học sinh Việt Nam đang phải đối mặt mỗi ngày</p>
+    </div>
+
+    <div class="problems-grid">
+      <div class="problem-card glass-card" data-animate>
+        <div class="problem-icon" style="--p-color: #ef4444;">
+          <i class="fa-solid fa-clock"></i>
+        </div>
+        <div class="problem-content">
+          <h3>Khó quản lý thời gian</h3>
+          <p class="problem-desc">Học sinh thường không có kế hoạch rõ ràng, dẫn đến học dồn, thức khuya trước kỳ thi và hiệu quả học tập thấp.</p>
+          <div class="problem-impact">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>Tác động: 72% học sinh thừa nhận bị phân tâm và không hoàn thành bài đúng hạn.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="problem-card glass-card" data-animate>
+        <div class="problem-icon" style="--p-color: #f97316;">
+          <i class="fa-solid fa-bell-slash"></i>
+        </div>
+        <div class="problem-content">
+          <h3>Dễ quên bài tập & lịch kiểm tra</h3>
+          <p class="problem-desc">Không có hệ thống nhắc nhở thông minh, học sinh thường xuyên quên nộp bài, bỏ lỡ các bài kiểm tra quan trọng.</p>
+          <div class="problem-impact">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>Tác động: Điểm số giảm sút không phải vì thiếu kiến thức mà vì thiếu tổ chức.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="problem-card glass-card" data-animate>
+        <div class="problem-icon" style="--p-color: #eab308;">
+          <i class="fa-solid fa-map"></i>
+        </div>
+        <div class="problem-content">
+          <h3>Chưa biết lập kế hoạch học tập</h3>
+          <p class="problem-desc">Hầu hết học sinh không được dạy cách xây dựng lộ trình học tập cá nhân phù hợp với năng lực và mục tiêu của mình.</p>
+          <div class="problem-impact">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>Tác động: Học tràn lan, không trọng tâm, tốn nhiều thời gian mà không hiệu quả.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="problem-card glass-card" data-animate>
+        <div class="problem-icon" style="--p-color: #8b5cf6;">
+          <i class="fa-solid fa-scale-unbalanced"></i>
+        </div>
+        <div class="problem-content">
+          <h3>Khó cân bằng học tập – nghỉ ngơi</h3>
+          <p class="problem-desc">Áp lực thi cử khiến nhiều học sinh học quá sức, bỏ qua thời gian nghỉ ngơi, dẫn đến kiệt sức và stress.</p>
+          <div class="problem-impact">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>Tác động: 65% học sinh cấp 3 cho biết thường xuyên cảm thấy mệt mỏi và căng thẳng.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="problem-card glass-card" data-animate>
+        <div class="problem-icon" style="--p-color: #06b6d4;">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+        <div class="problem-content">
+          <h3>Chưa biết dùng AI đúng cách</h3>
+          <p class="problem-desc">Nhiều học sinh dùng AI để "chép bài" thay vì học tập, hoặc hoàn toàn không biết AI có thể hỗ trợ gì cho việc học của mình.</p>
+          <div class="problem-impact">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <span>Tác động: Bỏ lỡ tiềm năng to lớn của AI, hoặc lạm dụng tạo ra phụ thuộc tiêu cực.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="problem-card problem-card-summary glass-card" data-animate>
+        <div class="summary-icon">
+          <i class="fa-solid fa-chart-pie"></i>
+        </div>
+        <h3>Tóm tắt thống kê</h3>
+        <div class="stat-bar-list">
+          <div class="stat-bar-item">
+            <span>Quản lý thời gian kém</span>
+            <div class="bar-track"><div class="bar-fill" data-width="72">72%</div></div>
+          </div>
+          <div class="stat-bar-item">
+            <span>Quên bài / lịch thi</span>
+            <div class="bar-track"><div class="bar-fill" data-width="68">68%</div></div>
+          </div>
+          <div class="stat-bar-item">
+            <span>Không có kế hoạch</span>
+            <div class="bar-track"><div class="bar-fill" data-width="80">80%</div></div>
+          </div>
+          <div class="stat-bar-item">
+            <span>Căng thẳng học tập</span>
+            <div class="bar-track"><div class="bar-fill" data-width="65">65%</div></div>
+          </div>
+          <div class="stat-bar-item">
+            <span>Chưa hiểu đúng về AI</span>
+            <div class="bar-track"><div class="bar-fill" data-width="85">85%</div></div>
+          </div>
+        </div>
+        <p class="stat-note">*Dữ liệu khảo sát thực tế học sinh THPT Việt Nam 2024–2025</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SECTION 4: GIẢI PHÁP ========== -->
+<section class="section" id="solutions">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Giải Pháp</span>
+      <h2 class="section-title">EduLife AI <span class="gradient-text">giải quyết thế nào?</span></h2>
+      <p class="section-subtitle">5 giải pháp thông minh được tích hợp trong một nền tảng duy nhất</p>
+    </div>
+
+    <div class="solutions-list">
+
+      <div class="solution-item glass-card" data-animate>
+        <div class="solution-num">01</div>
+        <div class="solution-icon" style="--s-color: #6366f1;"><i class="fa-solid fa-calendar-check"></i></div>
+        <div class="solution-content">
+          <h3>AI Lập kế hoạch học tập cá nhân hóa</h3>
+          <div class="solution-flow">
+            <div class="flow-step"><i class="fa-solid fa-triangle-exclamation"></i><span><strong>Vấn đề:</strong> Không biết học gì, học khi nào</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-microchip"></i><span><strong>Công nghệ:</strong> AI phân tích mục tiêu & thời gian rảnh</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-gears"></i><span><strong>Hoạt động:</strong> Tạo lịch học tuần cá nhân hóa tự động</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-star"></i><span><strong>Lợi ích:</strong> Học đúng trọng tâm, đủ thời gian, không bị quá tải</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="solution-item glass-card" data-animate>
+        <div class="solution-num">02</div>
+        <div class="solution-icon" style="--s-color: #a855f7;"><i class="fa-solid fa-comment-dots"></i></div>
+        <div class="solution-content">
+          <h3>Trợ lý AI giải thích bài học</h3>
+          <div class="solution-flow">
+            <div class="flow-step"><i class="fa-solid fa-triangle-exclamation"></i><span><strong>Vấn đề:</strong> Không hiểu bài, không biết hỏi ai</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-microchip"></i><span><strong>Công nghệ:</strong> NLP – Xử lý ngôn ngữ tự nhiên</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-gears"></i><span><strong>Hoạt động:</strong> Chatbot giải thích khái niệm theo cách dễ hiểu</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-star"></i><span><strong>Lợi ích:</strong> Học bất cứ lúc nào, hiểu sâu hơn, tự tin hơn</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="solution-item glass-card" data-animate>
+        <div class="solution-num">03</div>
+        <div class="solution-icon" style="--s-color: #06b6d4;"><i class="fa-solid fa-bell"></i></div>
+        <div class="solution-content">
+          <h3>Lịch học & Nhắc việc thông minh</h3>
+          <div class="solution-flow">
+            <div class="flow-step"><i class="fa-solid fa-triangle-exclamation"></i><span><strong>Vấn đề:</strong> Quên bài tập, lịch kiểm tra, deadline</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-microchip"></i><span><strong>Công nghệ:</strong> Smart Notification System</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-gears"></i><span><strong>Hoạt động:</strong> Nhắc nhở theo thời gian thực, ưu tiên thông minh</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-star"></i><span><strong>Lợi ích:</strong> Không bao giờ bỏ lỡ nhiệm vụ quan trọng</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="solution-item glass-card" data-animate>
+        <div class="solution-num">04</div>
+        <div class="solution-icon" style="--s-color: #10b981;"><i class="fa-solid fa-bullseye"></i></div>
+        <div class="solution-content">
+          <h3>Quản lý mục tiêu cá nhân</h3>
+          <div class="solution-flow">
+            <div class="flow-step"><i class="fa-solid fa-triangle-exclamation"></i><span><strong>Vấn đề:</strong> Không có định hướng rõ ràng, dễ nản lòng</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-microchip"></i><span><strong>Công nghệ:</strong> Goal Tracking + Progress Analytics</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-gears"></i><span><strong>Hoạt động:</strong> Chia nhỏ mục tiêu lớn thành nhiệm vụ hàng ngày</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-star"></i><span><strong>Lợi ích:</strong> Thấy tiến độ rõ ràng, duy trì động lực liên tục</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="solution-item glass-card" data-animate>
+        <div class="solution-num">05</div>
+        <div class="solution-icon" style="--s-color: #f59e0b;"><i class="fa-solid fa-heart-pulse"></i></div>
+        <div class="solution-content">
+          <h3>Gợi ý thói quen sống khoa học</h3>
+          <div class="solution-flow">
+            <div class="flow-step"><i class="fa-solid fa-triangle-exclamation"></i><span><strong>Vấn đề:</strong> Thức khuya, ít vận động, căng thẳng</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-microchip"></i><span><strong>Công nghệ:</strong> AI Wellness Recommendation</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-gears"></i><span><strong>Hoạt động:</strong> Phân tích lịch học, gợi ý giờ ngủ, vận động, nghỉ giải lao</span></div>
+            <div class="flow-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="flow-step"><i class="fa-solid fa-star"></i><span><strong>Lợi ích:</strong> Sức khoẻ tốt hơn, não bộ hoạt động hiệu quả hơn</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== SECTION 5: TRẢI NGHIỆM / DEMO ========== -->
+<section class="section section-alt" id="demo">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag"><i class="fa-solid fa-flask"></i> Trải Nghiệm</span>
+      <h2 class="section-title">Thử ngay <span class="gradient-text">công cụ Demo</span></h2>
+      <div class="demo-notice">
+        <i class="fa-solid fa-circle-info"></i>
+        <strong>Lưu ý:</strong> Tab <strong>Lập Kế Hoạch</strong>, <strong>Nhiệm Vụ</strong> và <strong>Hỏi Đáp Mô Phỏng</strong> hoạt động bằng thuật toán JavaScript. Tab <strong>EduLife AI Assistant</strong> kết nối AI thật qua OpenAI – yêu cầu khởi động backend server.
+      </div>
+    </div>
+
+    <!-- Demo Tabs -->
+    <div class="demo-tabs" data-animate>
+      <button class="demo-tab active" data-tab="planner">
+        <i class="fa-solid fa-calendar-check"></i> Lập Kế Hoạch
+      </button>
+      <button class="demo-tab" data-tab="tasks">
+        <i class="fa-solid fa-list-check"></i> Quản Lý Nhiệm Vụ
+      </button>
+      <button class="demo-tab" data-tab="qa">
+        <i class="fa-solid fa-comments"></i> Hỏi Đáp Mô Phỏng
+      </button>
+      <button class="demo-tab demo-tab-ai" data-tab="ai-assistant">
+        <i class="fa-solid fa-robot"></i> EduLife AI Assistant
+        <span class="tab-badge-new">MỚI</span>
+      </button>
+    </div>
+
+    <!-- Tab 1: Lập kế hoạch -->
+    <div class="demo-panel active" id="tab-planner" data-animate>
+      <div class="demo-form glass-card">
+        <h3><i class="fa-solid fa-wand-magic-sparkles"></i> Tạo kế hoạch học tập cá nhân</h3>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Các môn học (cách nhau bằng dấu phẩy)</label>
+            <input type="text" id="subjectsInput" placeholder="Toán, Lý, Hóa, Văn, Anh..." value="Toán, Lý, Hóa, Văn, Anh" />
+          </div>
+          <div class="form-group">
+            <label>Thời gian rảnh mỗi ngày (giờ)</label>
+            <input type="number" id="hoursInput" placeholder="Nhập số giờ..." min="1" max="12" value="4" />
+          </div>
+          <div class="form-group">
+            <label>Mục tiêu học tập</label>
+            <select id="goalInput">
+              <option value="on_thi">Ôn thi đại học</option>
+              <option value="cai_thien">Cải thiện điểm số</option>
+              <option value="co_ban">Nắm chắc kiến thức cơ bản</option>
+              <option value="nang_cao">Học nâng cao / Olympiad</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Môn học yếu nhất</label>
+            <input type="text" id="weakSubject" placeholder="Ví dụ: Hóa học..." value="Hóa" />
+          </div>
+        </div>
+        <button class="btn btn-primary btn-full" id="generatePlan">
+          <i class="fa-solid fa-wand-magic-sparkles"></i> Tạo kế hoạch học tập
+        </button>
+      </div>
+      <div class="demo-result glass-card" id="planResult" style="display:none;">
+        <div class="result-header">
+          <h3><i class="fa-solid fa-calendar-week"></i> Kế hoạch học tập tuần của bạn</h3>
+          <span class="ai-badge"><i class="fa-solid fa-robot"></i> AI Mô Phỏng</span>
+        </div>
+        <div id="planContent"></div>
+        <div class="result-tips">
+          <h4><i class="fa-solid fa-lightbulb"></i> Lời khuyên từ EduLife AI:</h4>
+          <ul id="planTips"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Quản lý nhiệm vụ -->
+    <div class="demo-panel" id="tab-tasks">
+      <div class="demo-form glass-card">
+        <h3><i class="fa-solid fa-plus-circle"></i> Thêm nhiệm vụ mới</h3>
+        <div class="form-grid">
+          <div class="form-group form-group-wide">
+            <label>Tên nhiệm vụ</label>
+            <input type="text" id="taskName" placeholder="Ví dụ: Làm bài tập Toán trang 45-48..." />
+          </div>
+          <div class="form-group">
+            <label>Hạn hoàn thành</label>
+            <input type="date" id="taskDeadline" />
+          </div>
+          <div class="form-group">
+            <label>Độ ưu tiên</label>
+            <select id="taskPriority">
+              <option value="high">🔴 Cao</option>
+              <option value="medium" selected>🟡 Trung bình</option>
+              <option value="low">🟢 Thấp</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Môn học</label>
+            <select id="taskSubject">
+              <option>Toán</option>
+              <option>Lý</option>
+              <option>Hóa</option>
+              <option>Văn</option>
+              <option>Anh</option>
+              <option>Sinh</option>
+              <option>Sử</option>
+              <option>Địa</option>
+              <option>Khác</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-full" id="addTaskBtn">
+          <i class="fa-solid fa-plus"></i> Thêm nhiệm vụ
+        </button>
+      </div>
+      <div class="task-board glass-card" id="taskBoard">
+        <div class="task-board-header">
+          <h3><i class="fa-solid fa-list-check"></i> Danh sách nhiệm vụ</h3>
+          <div class="task-filters">
+            <button class="filter-btn active" data-filter="all">Tất cả</button>
+            <button class="filter-btn" data-filter="pending">Chưa xong</button>
+            <button class="filter-btn" data-filter="done">Hoàn thành</button>
+          </div>
+        </div>
+        <div id="taskList"></div>
+        <div class="task-summary" id="taskSummary"></div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Hỏi đáp kiến thức -->
+    <div class="demo-panel" id="tab-qa">
+      <div class="qa-container glass-card">
+        <div class="qa-header">
+          <h3><i class="fa-solid fa-robot"></i> Trợ lý EduLife AI</h3>
+          <span class="ai-badge"><i class="fa-solid fa-robot"></i> AI Mô Phỏng</span>
+        </div>
+        <div class="qa-chat" id="qaChat">
+          <div class="chat-msg bot-msg">
+            <div class="msg-avatar"><i class="fa-solid fa-brain"></i></div>
+            <div class="msg-bubble">
+              <p>Xin chào! Tôi là trợ lý EduLife AI 🤖</p>
+              <p>Bạn có thể hỏi tôi về:</p>
+              <ul>
+                <li>📚 Kiến thức các môn học (Toán, Lý, Hóa, Văn...)</li>
+                <li>💡 Phương pháp học tập hiệu quả</li>
+                <li>🧠 Cách ghi nhớ bài tốt hơn</li>
+                <li>⏰ Mẹo quản lý thời gian</li>
+              </ul>
+              <p>Hãy đặt câu hỏi nhé!</p>
+            </div>
+          </div>
+        </div>
+        <div class="qa-input-area">
+          <div class="quick-questions">
+            <span>Câu hỏi gợi ý:</span>
+            <button class="quick-q" data-q="Phương pháp học Toán hiệu quả?">Học Toán hiệu quả?</button>
+            <button class="quick-q" data-q="Làm thế nào để ghi nhớ bài nhanh?">Ghi nhớ bài nhanh?</button>
+            <button class="quick-q" data-q="Định luật bảo toàn năng lượng là gì?">Định luật bảo toàn NL?</button>
+            <button class="quick-q" data-q="Cách quản lý thời gian học tập?">Quản lý thời gian?</button>
+          </div>
+          <div class="qa-input-row">
+            <input type="text" id="qaInput" placeholder="Nhập câu hỏi của bạn..." />
+            <button class="btn btn-primary" id="qaSendBtn">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 4: EduLife AI Assistant (AI thật) -->
+    <div class="demo-panel" id="tab-ai-assistant">
+      <div class="ai-assistant-container glass-card">
+
+        <!-- Header -->
+        <div class="ai-assistant-header">
+          <div class="ai-assistant-header-left">
+            <div class="ai-assistant-avatar">
+              <i class="fa-solid fa-robot"></i>
+              <span class="ai-status-dot" id="aiStatusDot"></span>
+            </div>
+            <div>
+              <h3>EduLife AI Assistant</h3>
+              <span class="ai-assistant-subtitle" id="aiStatusText">Đang kiểm tra kết nối...</span>
+            </div>
+          </div>
+          <div class="ai-assistant-header-right">
+            <span class="ai-real-badge"><i class="fa-solid fa-bolt"></i> AI Thật – OpenAI</span>
+            <button class="ai-clear-btn" id="aiClearBtn" title="Xóa cuộc trò chuyện">
+              <i class="fa-solid fa-trash-can"></i> Xóa chat
+            </button>
+          </div>
+        </div>
+
+        <!-- Thông báo lỗi cấu hình (ẩn mặc định) -->
+        <div class="ai-config-warning" id="aiConfigWarning" style="display:none;">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <div>
+            <strong>Backend chưa sẵn sàng</strong>
+            <p id="aiConfigWarningText">Chưa kết nối được với server. Hãy khởi động backend theo hướng dẫn bên dưới.</p>
+          </div>
+          <button class="ai-retry-btn" id="aiRetryBtn">
+            <i class="fa-solid fa-rotate-right"></i> Thử lại
+          </button>
+        </div>
+
+        <!-- Khung trò chuyện -->
+        <div class="ai-chat-window" id="aiChatWindow">
+          <!-- Tin nhắn chào mừng -->
+          <div class="ai-msg ai-msg-bot" id="aiWelcomeMsg">
+            <div class="ai-msg-avatar bot">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="ai-msg-content">
+              <div class="ai-msg-bubble">
+                <p>Xin chào! Tôi là <strong>EduLife AI</strong> – trợ lý học tập thông minh dành cho bạn 🎓</p>
+                <p>Tôi có thể giúp bạn:</p>
+                <ul>
+                  <li>📐 Giải bài tập từng bước (Toán, Lý, Hóa, Văn, Anh...)</li>
+                  <li>🧠 Giải thích khái niệm khó dễ hiểu hơn</li>
+                  <li>⏰ Lên chiến lược học tập và quản lý thời gian</li>
+                  <li>💡 Tư vấn phương pháp ghi nhớ hiệu quả</li>
+                  <li>😌 Hỗ trợ vượt qua căng thẳng học tập</li>
+                </ul>
+                <p>Hãy đặt câu hỏi bất kỳ nhé!</p>
+              </div>
+              <span class="ai-msg-time">EduLife AI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Câu hỏi gợi ý -->
+        <div class="ai-suggestions" id="aiSuggestions">
+          <span class="ai-suggestions-label"><i class="fa-solid fa-lightbulb"></i> Thử hỏi:</span>
+          <div class="ai-suggestions-list">
+            <button class="ai-suggest-btn" data-q="Giải thích định lý Pythagore và cho ví dụ minh họa">📐 Định lý Pythagore</button>
+            <button class="ai-suggest-btn" data-q="Cách học thuộc bài nhanh mà nhớ lâu là gì?">🧠 Học thuộc nhanh</button>
+            <button class="ai-suggest-btn" data-q="Lập kế hoạch ôn thi đại học hiệu quả trong 3 tháng">📅 Ôn thi đại học</button>
+            <button class="ai-suggest-btn" data-q="Giải phương trình bậc 2: x² - 5x + 6 = 0">✏️ Giải phương trình</button>
+            <button class="ai-suggest-btn" data-q="Làm thế nào để giảm căng thẳng trước kỳ thi?">😌 Giảm stress thi cử</button>
+            <button class="ai-suggest-btn" data-q="Phân tích bài thơ Đây thôn Vĩ Dạ của Hàn Mặc Tử">📝 Phân tích văn học</button>
+          </div>
+        </div>
+
+        <!-- Input khu vực -->
+        <div class="ai-input-area">
+          <div class="ai-input-wrapper">
+            <textarea
+              id="aiInput"
+              class="ai-input-field"
+              placeholder="Nhập câu hỏi của bạn... (Enter để gửi, Shift+Enter để xuống dòng)"
+              rows="1"
+              maxlength="2000"
+            ></textarea>
+            <div class="ai-input-actions">
+              <span class="ai-char-count" id="aiCharCount">0/2000</span>
+              <button class="ai-send-btn" id="aiSendBtn" title="Gửi (Enter)">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+          <p class="ai-disclaimer">
+            <i class="fa-solid fa-circle-info"></i>
+            EduLife AI có thể mắc lỗi. Hãy kiểm tra lại thông tin quan trọng từ sách giáo khoa.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <!-- KẾT THÚC Tab 4 -->
+
+  </div>
+</section>
+
+<!-- ========== SECTION 6: CÔNG NGHỆ ========== -->
+<section class="section" id="technology">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag"><i class="fa-solid fa-microchip"></i> Công Nghệ</span>
+      <h2 class="section-title">Nền tảng <span class="gradient-text">công nghệ</span> sử dụng</h2>
+      <p class="section-subtitle">Những công nghệ hiện đại được tích hợp trong EduLife AI</p>
+    </div>
+
+    <div class="tech-grid">
+      <div class="tech-card glass-card" data-animate>
+        <div class="tech-icon" style="--t-color: #6366f1;">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+        <h3>Artificial Intelligence (AI)</h3>
+        <p class="tech-role"><strong>Vai trò:</strong> Trung tâm xử lý thông minh của toàn hệ thống</p>
+        <ul class="tech-features">
+          <li><i class="fa-solid fa-dot-circle"></i> Machine Learning phân tích hành vi học tập</li>
+          <li><i class="fa-solid fa-dot-circle"></i> NLP xử lý câu hỏi ngôn ngữ tự nhiên</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Thuật toán gợi ý cá nhân hóa</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Phân tích tiến độ và dự báo kết quả</li>
+        </ul>
+        <div class="tech-tag">Công nghệ cốt lõi</div>
+      </div>
+
+      <div class="tech-card glass-card" data-animate>
+        <div class="tech-icon" style="--t-color: #f97316;">
+          <i class="fa-brands fa-html5"></i>
+        </div>
+        <h3>HTML5 / CSS3</h3>
+        <p class="tech-role"><strong>Vai trò:</strong> Xây dựng giao diện người dùng thân thiện</p>
+        <ul class="tech-features">
+          <li><i class="fa-solid fa-dot-circle"></i> HTML5 – Cấu trúc nội dung ngữ nghĩa</li>
+          <li><i class="fa-solid fa-dot-circle"></i> CSS3 Animation & Transition mượt mà</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Flexbox & Grid Layout hiện đại</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Glassmorphism & Gradient Design</li>
+        </ul>
+        <div class="tech-tag">Giao diện</div>
+      </div>
+
+      <div class="tech-card glass-card" data-animate>
+        <div class="tech-icon" style="--t-color: #eab308;">
+          <i class="fa-brands fa-js"></i>
+        </div>
+        <h3>JavaScript (ES6+)</h3>
+        <p class="tech-role"><strong>Vai trò:</strong> Xử lý logic và tương tác thời gian thực</p>
+        <ul class="tech-features">
+          <li><i class="fa-solid fa-dot-circle"></i> DOM manipulation linh hoạt</li>
+          <li><i class="fa-solid fa-dot-circle"></i> LocalStorage lưu dữ liệu người dùng</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Fetch API kết nối dịch vụ AI</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Async/Await xử lý bất đồng bộ</li>
+        </ul>
+        <div class="tech-tag">Logic & Tương tác</div>
+      </div>
+
+      <div class="tech-card glass-card" data-animate>
+        <div class="tech-icon" style="--t-color: #10b981;">
+          <i class="fa-solid fa-database"></i>
+        </div>
+        <h3>Cơ Sở Dữ Liệu</h3>
+        <p class="tech-role"><strong>Vai trò:</strong> Lưu trữ và quản lý dữ liệu học tập</p>
+        <ul class="tech-features">
+          <li><i class="fa-solid fa-dot-circle"></i> LocalStorage – Lưu cục bộ trên trình duyệt</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Firebase Realtime DB – Đồng bộ đám mây</li>
+          <li><i class="fa-solid fa-dot-circle"></i> IndexedDB – Dữ liệu offline</li>
+          <li><i class="fa-solid fa-dot-circle"></i> JSON API – Trao đổi dữ liệu chuẩn</li>
+        </ul>
+        <div class="tech-tag">Lưu trữ dữ liệu</div>
+      </div>
+
+      <div class="tech-card glass-card" data-animate>
+        <div class="tech-icon" style="--t-color: #06b6d4;">
+          <i class="fa-solid fa-mobile-screen"></i>
+        </div>
+        <h3>Responsive Web Design</h3>
+        <p class="tech-role"><strong>Vai trò:</strong> Tương thích mọi thiết bị, mọi nơi</p>
+        <ul class="tech-features">
+          <li><i class="fa-solid fa-dot-circle"></i> Mobile-first Design approach</li>
+          <li><i class="fa-solid fa-dot-circle"></i> CSS Media Queries tối ưu màn hình</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Progressive Web App (PWA)</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Touch-friendly UI / UX</li>
+        </ul>
+        <div class="tech-tag">Đa nền tảng</div>
+      </div>
+
+      <div class="tech-card glass-card" data-animate>
+        <div class="tech-icon" style="--t-color: #a855f7;">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3>Bảo Mật & Quyền Riêng Tư</h3>
+        <p class="tech-role"><strong>Vai trò:</strong> Bảo vệ thông tin học sinh an toàn</p>
+        <ul class="tech-features">
+          <li><i class="fa-solid fa-dot-circle"></i> HTTPS mã hoá kết nối</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Dữ liệu lưu cục bộ, không chia sẻ</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Không yêu cầu thông tin cá nhân nhạy cảm</li>
+          <li><i class="fa-solid fa-dot-circle"></i> Tuân thủ nguyên tắc bảo vệ trẻ em</li>
+        </ul>
+        <div class="tech-tag">An toàn</div>
+      </div>
+    </div>
+
+    <div class="tech-stack-visual glass-card" data-animate>
+      <h3><i class="fa-solid fa-layer-group"></i> Kiến trúc hệ thống EduLife AI</h3>
+      <div class="stack-diagram">
+        <div class="stack-layer" style="--layer-color: #6366f1;">
+          <span class="layer-label">Tầng AI</span>
+          <div class="layer-items">
+            <span>Machine Learning</span><span>NLP Engine</span><span>Recommendation System</span>
+          </div>
+        </div>
+        <div class="stack-layer" style="--layer-color: #a855f7;">
+          <span class="layer-label">Tầng Logic</span>
+          <div class="layer-items">
+            <span>JavaScript ES6+</span><span>REST API</span><span>Event System</span>
+          </div>
+        </div>
+        <div class="stack-layer" style="--layer-color: #06b6d4;">
+          <span class="layer-label">Tầng Giao diện</span>
+          <div class="layer-items">
+            <span>HTML5</span><span>CSS3 / Animations</span><span>Responsive Design</span>
+          </div>
+        </div>
+        <div class="stack-layer" style="--layer-color: #10b981;">
+          <span class="layer-label">Tầng Dữ liệu</span>
+          <div class="layer-items">
+            <span>LocalStorage</span><span>Firebase</span><span>JSON</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SECTION 7: TÁC ĐỘNG & HƯỚNG PHÁT TRIỂN ========== -->
+<section class="section section-alt" id="impact">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag"><i class="fa-solid fa-chart-line"></i> Tác Động</span>
+      <h2 class="section-title">Lợi ích & <span class="gradient-text">Hướng phát triển</span></h2>
+      <p class="section-subtitle">EduLife AI tạo ra tác động tích cực cho toàn bộ hệ sinh thái giáo dục</p>
+    </div>
+
+    <div class="impact-tabs">
+      <div class="impact-tab-btns">
+        <button class="impact-tab-btn active" data-impact="students"><i class="fa-solid fa-graduation-cap"></i> Học Sinh</button>
+        <button class="impact-tab-btn" data-impact="teachers"><i class="fa-solid fa-chalkboard-teacher"></i> Giáo Viên</button>
+        <button class="impact-tab-btn" data-impact="family"><i class="fa-solid fa-house-heart"></i> Gia Đình</button>
+        <button class="impact-tab-btn" data-impact="community"><i class="fa-solid fa-earth-asia"></i> Cộng Đồng</button>
+      </div>
+
+      <div class="impact-tab-content active glass-card" id="impact-students" data-animate>
+        <div class="impact-content-grid">
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Tiết kiệm 2–3 giờ học mỗi ngày</strong><p>Nhờ lập kế hoạch thông minh và loại bỏ thời gian học không hiệu quả.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Điểm số cải thiện rõ rệt</strong><p>Học đúng trọng tâm, không bỏ sót bài tập, chuẩn bị thi tốt hơn.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Giảm căng thẳng tâm lý</strong><p>Cân bằng giữa học tập và nghỉ ngơi giúp sức khoẻ tinh thần ổn định.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Phát triển kỹ năng tự học</strong><p>Học sinh chủ động hơn, không phụ thuộc hoàn toàn vào thầy cô.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Hiểu đúng về AI</strong><p>Sử dụng công nghệ có trách nhiệm, tư duy phản biện với thông tin AI.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Xây dựng thói quen tốt</strong><p>Ngủ đủ giấc, vận động đều đặn, ăn uống lành mạnh theo gợi ý AI.</p></div></div>
+        </div>
+      </div>
+
+      <div class="impact-tab-content glass-card" id="impact-teachers">
+        <div class="impact-content-grid">
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Học sinh chuẩn bị bài tốt hơn</strong><p>Khi học sinh có kế hoạch học tập rõ ràng, chất lượng lớp học tăng lên.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Giảm tải cho giáo viên</strong><p>AI hỗ trợ giải đáp câu hỏi cơ bản, giáo viên tập trung vào dạy chuyên sâu.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Dữ liệu tiến độ học sinh</strong><p>Nhà trường có thể theo dõi học sinh cần hỗ trợ thêm.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Công cụ hỗ trợ giảng dạy</strong><p>Giáo viên có thể gợi ý học sinh dùng EduLife AI để ôn tập thêm.</p></div></div>
+        </div>
+      </div>
+
+      <div class="impact-tab-content glass-card" id="impact-family">
+        <div class="impact-content-grid">
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Yên tâm về việc học của con</strong><p>Con có công cụ hỗ trợ học tập an toàn, không có nội dung độc hại.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Tiết kiệm chi phí học thêm</strong><p>AI giải thích bài học giúp giảm bớt sự phụ thuộc vào gia sư đắt tiền.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Con cái tự lập hơn</strong><p>Kỹ năng tự quản lý giúp trẻ phát triển tính kỷ luật và trách nhiệm.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Thói quen sinh hoạt lành mạnh</strong><p>Gia đình vui vẻ hơn khi con không thức khuya, không căng thẳng.</p></div></div>
+        </div>
+      </div>
+
+      <div class="impact-tab-content glass-card" id="impact-community">
+        <div class="impact-content-grid">
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Thế hệ trẻ thích nghi với AI</strong><p>Học sinh được tiếp cận AI có trách nhiệm ngay từ sớm.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Thu hẹp khoảng cách số</strong><p>Công cụ miễn phí, dễ dùng giúp học sinh mọi vùng miền tiếp cận.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Nâng cao chất lượng giáo dục</strong><p>Góp phần vào mục tiêu chuyển đổi số giáo dục quốc gia.</p></div></div>
+          <div class="impact-benefit"><i class="fa-solid fa-check-circle"></i><div><strong>Văn hóa học tập suốt đời</strong><p>Tạo nền tảng để học sinh học không ngừng trong kỷ nguyên số.</p></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hướng phát triển -->
+    <div class="roadmap glass-card" data-animate>
+      <h3><i class="fa-solid fa-road"></i> Lộ trình phát triển EduLife AI</h3>
+      <div class="roadmap-timeline">
+        <div class="roadmap-item roadmap-done">
+          <div class="roadmap-dot"><i class="fa-solid fa-check"></i></div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Giai đoạn 1 – Hiện tại</span>
+            <h4>Website Demo</h4>
+            <p>Giao diện hoàn chỉnh, các công cụ mô phỏng AI, hoạt động 100% trên trình duyệt.</p>
+          </div>
+        </div>
+        <div class="roadmap-item roadmap-done">
+          <div class="roadmap-dot"><i class="fa-solid fa-check"></i></div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Giai đoạn 2 – Q3/2027</span>
+            <h4>Tích hợp AI thật ✅</h4>
+            <p>Đã kết nối OpenAI API – chatbot EduLife AI Assistant trả lời thật sự bằng tiếng Việt.</p>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-dot"><i class="fa-solid fa-mobile"></i></div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Giai đoạn 3 – Q1/2028</span>
+            <h4>Ứng dụng di động</h4>
+            <p>Phát triển app iOS và Android, đồng bộ dữ liệu đám mây, thông báo thời gian thực.</p>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-dot"><i class="fa-solid fa-chart-bar"></i></div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Giai đoạn 4 – Q3/2028</span>
+            <h4>Phân tích tiến độ học tập</h4>
+            <p>Dashboard báo cáo chi tiết, AI dự đoán kết quả thi, gợi ý lộ trình ôn tập cụ thể.</p>
+          </div>
+        </div>
+        <div class="roadmap-item">
+          <div class="roadmap-dot"><i class="fa-solid fa-globe"></i></div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Giai đoạn 5 – 2029+</span>
+            <h4>Mở rộng & Cộng đồng</h4>
+            <p>Hỗ trợ nhiều môn học, kết nối cộng đồng học sinh, hợp tác với trường học toàn quốc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SECTION 8: ĐỘI NGŨ & LIÊN HỆ ========== -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section-header" data-animate>
+      <span class="section-tag"><i class="fa-solid fa-people-group"></i> Đội Ngũ</span>
+      <h2 class="section-title">Những người <span class="gradient-text">xây dựng dự án</span></h2>
+      <p class="section-subtitle">Đội <strong>AI Cybertech</strong> – Đam mê công nghệ và giáo dục – STEMPETITION 2027</p>
+    </div>
+
+    <div class="team-grid" data-animate>
+      <!-- === THÀNH VIÊN ĐỘI AI CYBERTECH === -->
+      <div class="team-card glass-card">
+        <div class="team-avatar">
+          <div class="avatar-circle" style="--av-color: #6366f1;">
+            <i class="fa-solid fa-code"></i>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Đoàn Công Đăng Khôi</h3>
+          <span class="team-role">Trưởng nhóm & Lập trình viên</span>
+          <p class="team-desc">Phụ trách kiến trúc tổng thể dự án, lập trình frontend và tích hợp các tính năng AI mô phỏng.</p>
+        </div>
+      </div>
+
+      <div class="team-card glass-card">
+        <div class="team-avatar">
+          <div class="avatar-circle" style="--av-color: #a855f7;">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Bùi Chí Thành</h3>
+          <span class="team-role">Lập trình & Thiết kế UI/UX</span>
+          <p class="team-desc">Phụ trách xây dựng giao diện, trải nghiệm người dùng, hiệu ứng hình ảnh và kiểm thử chức năng.</p>
+        </div>
+      </div>
+
+      <div class="team-card glass-card">
+        <div class="team-avatar">
+          <div class="avatar-circle" style="--av-color: #06b6d4;">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Phương Nghi</h3>
+          <span class="team-role">Nghiên cứu & Nội dung</span>
+          <p class="team-desc">Phụ trách nghiên cứu vấn đề thực tế, xây dựng nội dung thuyết trình và thu thập dữ liệu khảo sát.</p>
+        </div>
+      </div>
+
+      <div class="team-card glass-card">
+        <div class="team-avatar">
+          <div class="avatar-circle" style="--av-color: #f59e0b;">
+            <i class="fa-solid fa-chart-bar"></i>
+          </div>
+        </div>
+        <div class="team-info">
+          <h3 class="team-name">Trang</h3>
+          <span class="team-role">Phân tích & Truyền thông</span>
+          <p class="team-desc">Phụ trách phân tích giải pháp, thiết kế tài liệu trình bày và truyền thông dự án tại cuộc thi.</p>
+        </div>
+      </div>
+      <!-- === KẾT THÚC THÀNH VIÊN ĐỘI AI CYBERTECH === -->
+    </div>
+
+    <!-- Thông tin giáo viên hướng dẫn -->
+    <div class="advisor-card glass-card" data-animate>
+      <div class="advisor-icon"><i class="fa-solid fa-chalkboard-teacher"></i></div>
+      <div class="advisor-info">
+        <span class="advisor-label">Giáo viên hướng dẫn</span>
+        <!-- ✏️ Điền tên GVHD vào đây -->
+        <h3>Thầy/Cô [Tên Giáo Viên Hướng Dẫn]</h3>
+        <!-- ✏️ Điền tên trường và địa chỉ vào đây -->
+        <p>Trường [Tên Trường THPT] – Tỉnh/Thành phố [Địa chỉ]</p>
+      </div>
+    </div>
+
+    <!-- Liên hệ -->
+    <div class="contact-section" data-animate>
+      <h3><i class="fa-solid fa-envelope"></i> Liên hệ với chúng tôi</h3>
+      <div class="contact-grid">
+        <div class="contact-card glass-card">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Email</span>
+          <!-- Chỉnh sửa email tại đây -->
+          <a href="mailto:edulifeai@example.com">edulifeai@example.com</a>
+        </div>
+        <div class="contact-card glass-card">
+          <i class="fa-brands fa-facebook"></i>
+          <span>Facebook</span>
+          <a href="#">EduLife AI Project</a>
+        </div>
+        <div class="contact-card glass-card">
+          <i class="fa-solid fa-school"></i>
+          <span>Trường học</span>
+          <!-- ✏️ Điền tên trường vào đây -->
+          <a href="#">[Tên Trường THPT]</a>
+        </div>
+        <div class="contact-card glass-card">
+          <i class="fa-brands fa-github"></i>
+          <span>GitHub</span>
+          <a href="#">github.com/edulifeai</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="logo-icon"><i class="fa-solid fa-brain"></i></div>
+          <span class="logo-text">EduLife <span class="logo-accent">AI</span></span>
+        </div>
+        <p>Nền tảng học tập thông minh ứng dụng trí tuệ nhân tạo cho học sinh Việt Nam.</p>
+        <div class="footer-badge">
+          <i class="fa-solid fa-trophy"></i>
+          STEMPETITION 2027 – Challenge 5: Future Technology
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Điều hướng</h4>
+        <ul>
+          <li><a href="#home">Trang Chủ</a></li>
+          <li><a href="#about">Giới Thiệu</a></li>
+          <li><a href="#problems">Vấn Đề Thực Tế</a></li>
+          <li><a href="#solutions">Giải Pháp AI</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Khám phá</h4>
+        <ul>
+          <li><a href="#demo">Trải Nghiệm Demo</a></li>
+          <li><a href="#technology">Công Nghệ</a></li>
+          <li><a href="#impact">Tác Động</a></li>
+          <li><a href="#team">Đội Ngũ</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <h4>Thông tin dự án</h4>
+        <p><i class="fa-solid fa-trophy"></i> STEMPETITION 2027</p>
+        <p><i class="fa-solid fa-flag"></i> Challenge 5: Future Technology</p>
+        <p><i class="fa-solid fa-calendar"></i> Năm học 2026–2027</p>
+        <p><i class="fa-solid fa-map-marker-alt"></i> Việt Nam</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2027 EduLife AI – Dự án tham dự STEMPETITION 2027. Được xây dựng bằng ❤️ và công nghệ.</p>
+      <p class="footer-tech">HTML5 • CSS3 • JavaScript • AI Technology</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" title="Về đầu trang">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
