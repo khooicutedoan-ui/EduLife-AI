@@ -703,7 +703,8 @@ console.log('%c STEMPETITION 2027 – Challenge 5: Future Technology', 'color:#a
   /* ----------------------------------------------------------
      CẤU HÌNH
   ---------------------------------------------------------- */
-  const API_BASE        = 'http://localhost:3000';
+  // Tự động dùng domain hiện tại khi deploy, localhost khi dev
+  const API_BASE        = window.location.origin;
   const API_CHAT_URL    = `${API_BASE}/api/chat`;
   const API_STATUS_URL  = `${API_BASE}/api/status`;
   const MAX_HISTORY     = 20;   // Số tin nhắn tối đa giữ trong lịch sử
