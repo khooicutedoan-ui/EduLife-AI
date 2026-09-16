@@ -29,7 +29,7 @@ function applyTheme(theme) {
   }
 }
 
-const savedTheme = localStorage.getItem('edulife-theme') || 'dark';
+const savedTheme = localStorage.getItem('edulife-theme') || 'light';
 applyTheme(savedTheme);
 
 themeToggle.addEventListener('click', () => {

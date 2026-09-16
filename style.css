@@ -1864,3 +1864,347 @@ body.js-ready [data-animate].animated {
   .ai-msg-bubble               { font-size: 0.88rem; padding: 11px 14px; }
   .ai-chat-window              { max-height: 280px; }
 }
+
+
+/* ============================================================
+   ENHANCED ANIMATIONS & LIGHT MODE POLISH
+   ============================================================ */
+
+/* ---- LIGHT MODE – làm trắng sáng hơn ---- */
+:root {
+  --bg: #ffffff;
+  --bg-secondary: #f8f9ff;
+  --surface: rgba(255,255,255,0.95);
+  --surface-hover: #ffffff;
+  --glass: rgba(255,255,255,0.85);
+  --glass-border: rgba(99,102,241,0.15);
+  --glass-shadow: rgba(99,102,241,0.12);
+  --section-alt: #f5f6ff;
+  --border: rgba(99,102,241,0.12);
+  --nav-bg: rgba(255,255,255,0.95);
+  --text: #1e1b4b;
+  --text-secondary: #4338ca;
+  --text-muted: #9ca3af;
+}
+
+/* ---- PARTICLES BACKGROUND ở hero ---- */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(99,102,241,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(168,85,247,0.08) 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, rgba(6,182,212,0.06) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ---- FLOATING DOTS ở hero ---- */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(99,102,241,0.15) 1px, transparent 1px),
+    radial-gradient(circle, rgba(168,85,247,0.1) 1px, transparent 1px);
+  background-size: 60px 60px, 90px 90px;
+  background-position: 0 0, 30px 30px;
+  pointer-events: none;
+  animation: dotsFloat 20s linear infinite;
+  opacity: 0.4;
+}
+@keyframes dotsFloat {
+  0%   { transform: translateY(0); }
+  100% { transform: translateY(-60px); }
+}
+
+/* ---- SHIMMER trên glass cards ---- */
+.glass-card {
+  position: relative;
+  overflow: hidden;
+}
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 60%;
+  height: 200%;
+  background: linear-gradient(
+    105deg,
+    transparent 40%,
+    rgba(255,255,255,0.25) 50%,
+    transparent 60%
+  );
+  transform: rotate(25deg);
+  transition: none;
+  pointer-events: none;
+  opacity: 0;
+}
+.glass-card:hover::before {
+  animation: shimmer 0.7s ease forwards;
+}
+@keyframes shimmer {
+  0%   { opacity: 0; left: -100%; top: -100%; }
+  30%  { opacity: 1; }
+  100% { opacity: 0; left: 150%; top: 150%; }
+}
+
+/* ---- GLOW khi hover card ---- */
+.glass-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow:
+    0 20px 60px var(--glass-shadow),
+    0 0 0 1px rgba(99,102,241,0.1),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+/* ---- GRADIENT TEXT ANIMATION ---- */
+.gradient-text {
+  background: linear-gradient(270deg, #6366f1, #a855f7, #06b6d4, #6366f1);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 5s ease infinite;
+}
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ---- HERO TITLE – chữ xuất hiện từng từ ---- */
+.hero-title {
+  animation: titleReveal 1s cubic-bezier(0.16,1,0.3,1) both;
+}
+@keyframes titleReveal {
+  from { opacity: 0; transform: translateY(40px) scale(0.95); filter: blur(8px); }
+  to   { opacity: 1; transform: translateY(0) scale(1);       filter: blur(0); }
+}
+
+.hero-slogan {
+  animation: titleReveal 1s 0.2s cubic-bezier(0.16,1,0.3,1) both;
+}
+.hero-desc {
+  animation: titleReveal 1s 0.35s cubic-bezier(0.16,1,0.3,1) both;
+}
+.hero-buttons {
+  animation: titleReveal 1s 0.5s cubic-bezier(0.16,1,0.3,1) both;
+}
+.hero-stats {
+  animation: titleReveal 1s 0.65s cubic-bezier(0.16,1,0.3,1) both;
+}
+
+/* ---- NAVBAR – đẹp hơn ở light mode ---- */
+[data-theme="light"] .navbar {
+  background: rgba(255,255,255,0.92);
+  border-bottom: 1px solid rgba(99,102,241,0.1);
+  box-shadow: 0 2px 24px rgba(99,102,241,0.08);
+}
+[data-theme="light"] .nav-link:hover,
+[data-theme="light"] .nav-link.active {
+  color: #6366f1;
+  background: rgba(99,102,241,0.08);
+}
+
+/* ---- SECTION HEADER – tag pill animation ---- */
+.section-tag {
+  animation: popIn 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.7); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* ---- SCROLL REVEAL – mượt hơn ---- */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.16,1,0.3,1),
+              transform 0.7s cubic-bezier(0.16,1,0.3,1);
+}
+[data-animate].animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- SOLUTION ITEMS – slide từ trái ---- */
+.solution-item {
+  transition: all 0.3s ease;
+}
+.solution-item:hover {
+  transform: translateX(8px);
+  border-left: 3px solid var(--primary);
+}
+
+/* ---- FLOW STEPS – bounce khi hover ---- */
+.flow-step {
+  transition: all 0.25s cubic-bezier(0.34,1.56,0.64,1);
+}
+.flow-step:hover {
+  transform: translateY(-4px) scale(1.03);
+  border-color: var(--primary);
+  background: rgba(99,102,241,0.06);
+}
+
+/* ---- BUTTONS – ripple effect ---- */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  inset: 50%;
+  background: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.btn:active::after {
+  inset: -50%;
+  transform: scale(1);
+  opacity: 0;
+  transition: 0s;
+}
+
+/* ---- STAT NUMBERS – glow ---- */
+.stat-num {
+  text-shadow: 0 0 30px rgba(99,102,241,0.3);
+}
+
+/* ---- NAV LINK – underline animation ---- */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%;
+  width: 0; height: 2px;
+  background: var(--gradient-main);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 80%;
+}
+
+/* ---- ABOUT CARD ICON – spin khi hover ---- */
+.about-card-icon {
+  transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
+}
+.about-card:hover .about-card-icon {
+  transform: rotate(10deg) scale(1.15);
+  box-shadow: 0 8px 24px rgba(99,102,241,0.25);
+}
+
+/* ---- TECH CARD ICON – float ---- */
+.tech-icon {
+  transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
+}
+.tech-card:hover .tech-icon {
+  transform: translateY(-6px) rotate(-5deg);
+}
+
+/* ---- ROADMAP – pulse dot ---- */
+.roadmap-dot {
+  transition: all 0.3s ease;
+}
+.roadmap-item:hover .roadmap-dot {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 6px rgba(99,102,241,0.15);
+}
+
+/* ---- TEAM CARD – avatar bounce ---- */
+.avatar-circle {
+  transition: all 0.4s cubic-bezier(0.34,1.56,0.64,1);
+}
+.team-card:hover .avatar-circle {
+  transform: scale(1.12) rotate(5deg);
+  box-shadow: 0 12px 32px rgba(99,102,241,0.3);
+}
+
+/* ---- FOOTER – gradient border top ---- */
+.footer {
+  border-top: 2px solid transparent;
+  border-image: linear-gradient(135deg, #6366f1, #a855f7, #06b6d4) 1;
+}
+
+/* ---- QUICK QUESTIONS – slide in ---- */
+.quick-q {
+  animation: slideInRight 0.3s ease both;
+}
+.quick-q:nth-child(2) { animation-delay: 0.05s; }
+.quick-q:nth-child(3) { animation-delay: 0.1s; }
+.quick-q:nth-child(4) { animation-delay: 0.15s; }
+.quick-q:nth-child(5) { animation-delay: 0.2s; }
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ---- PROBLEM CARDS – color flash khi hover ---- */
+.problem-card {
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+.problem-card:hover {
+  border-left-color: var(--danger);
+}
+
+/* ---- IMPACT BENEFIT – check icon bounce ---- */
+.impact-benefit i {
+  transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  color: var(--success);
+}
+.impact-benefit:hover i {
+  transform: scale(1.3) rotate(-10deg);
+}
+
+/* ---- BACK TO TOP – pulse ---- */
+.back-to-top {
+  animation: none;
+}
+.back-to-top.visible {
+  animation: backTopPulse 2s ease-in-out infinite;
+}
+@keyframes backTopPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(99,102,241,0.4); }
+  50%       { box-shadow: 0 4px 30px rgba(99,102,241,0.7), 0 0 0 8px rgba(99,102,241,0.1); }
+}
+
+/* ---- LIGHT MODE – hero section sáng đẹp ---- */
+[data-theme="light"] .hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #06b6d4 100%);
+}
+[data-theme="light"] .glass-card {
+  background: rgba(255,255,255,0.9);
+  border-color: rgba(99,102,241,0.12);
+  box-shadow: 0 8px 32px rgba(99,102,241,0.08);
+}
+[data-theme="light"] .section-alt {
+  background: linear-gradient(180deg, #f8f9ff 0%, #eef0ff 100%);
+}
+
+/* ---- DEMO TABS – active glow ---- */
+.demo-tab.active {
+  box-shadow: 0 4px 20px rgba(99,102,241,0.4), 0 0 0 1px rgba(99,102,241,0.2);
+  transform: translateY(-2px);
+}
+
+/* ---- AI ASSISTANT – typing cursor ---- */
+.ai-input-field:focus {
+  caret-color: var(--primary);
+}
+
+/* ---- SCROLL INDICATOR – bounce mạnh hơn ---- */
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(10px); }
+}
